@@ -1,0 +1,64 @@
+@keyframes box_move1 {
+    from {
+        left: -100px ; 
+        top: 0px;
+        transform: rotate(0deg);
+    } to {
+        left: 400px;
+        top: 700px;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes box_move2 {
+    from {
+        left: -100px;
+        top: 0px;
+        transform: rotate(0deg);
+    } to {
+        right:150px;
+        top: 750px;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes box_move3 {
+    from {
+        left: -100px ; 
+        top: 0px;
+        transform: rotate(0deg);
+    } to {
+        left: 400px;
+        top: 700px;
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes box_move4 {
+    from {
+        top: 70%;
+        left: 90%;
+        transform: rotate(0deg);
+    } to {
+        left: 20%;
+        top: 20%;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move_icon {
+    from {
+        transform: scale(1);
+    } to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+

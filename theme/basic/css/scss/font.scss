@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "apple";
+    src: local('AppleSDGothicNeoL'),url('../../font/AppleSDGothicNeoL.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100; 
+}
+
+@font-face {
+    font-family: "apple";
+    src: local('AppleSDGothicNeoM'),url('../../font/AppleSDGothicNeoM.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300; 
+}
+
+@font-face {
+    font-family: "apple";
+    src: local('AppleSDGothicNeoB'),url('../../font/AppleSDGothicNeoB.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold; 
+}
+
+@font-face {
+    font-family: "apple";
+    src: local('AppleSDGothicNeoEB'),url('../../font/AppleSDGothicNeoEB.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700; 
+}
+
+
+@font-face {
+    font-family: "apple";
+    src: local('AppleSDGothicNeoH'),url('../../font/AppleSDGothicNeoH.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 900; 
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: local('GmarketSansTTFLight'),url('../../font/GmarketSansTTFLight.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: local('GmarketSansTTFMedium'),url('../../font/GmarketSansTTFMedium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: local('GmarketSansTTFBold'),url('../../font/GmarketSansTTFBold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'notosans';
+    src: local('NotoSans-Regular'),url('../../font/NotoSans-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'notosans';
+    src: local('NotoSans-Bold'),url('../../font/NotoSans-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
