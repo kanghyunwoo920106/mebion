@@ -38,7 +38,7 @@ if (G5_IS_MOBILE) {
                 </div>
             </div>
             <div>
-                <p class="copy">Copyright ⓒ One Click Leading. All rights Reserved.</p>
+                <p class="copy">Copyright ⓒ Marketing Partner. All rights Reserved.</p>
             </div>
         </div>
         <!-- <div id="ft_link" class="ft_cnt">

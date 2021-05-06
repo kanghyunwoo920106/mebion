@@ -215,6 +215,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                                 </div>
                             </div>
                             <div class="box_wrap"></div>
+                            
                         </div>
                         <div class="right_wrap plan2" data-aos="fade-left">
                             <div class="plan_wrap">
@@ -253,6 +254,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                             <div class="box_wrap"></div>
                         </div>
                     </div>
+                    <div class="text_bg_s_wrap" data-aos="zoom-in"></div>
+                    <div class="text_bg_r_wrap" data-aos="zoom-in"></div>
+                    <div class="text_bg_l_wrap" data-aos="zoom-in"></div>
                 </div>
                 <div class="mouse_scroll_wrap" data-aos="fade-left">
                     <div class="mouse_img_wrap"></div>
@@ -471,6 +475,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         // main5 title클릭 시 내용 변경
         $(function() {
             $('.main5_wrap .content_wrap .right_wrap.plan1').addClass('plan_on');
+            $('.text_bg_s_wrap').addClass('plan_text_on');
             $('.explain_wrap a').on('click',function(e) {
                 e.preventDefault();
                 var selected_plan = $(this).attr('data-plan');
@@ -479,16 +484,25 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                     $('.main5_wrap .content_wrap .right_wrap.plan2').removeClass('plan_on');
                     $('.main5_wrap .content_wrap .right_wrap.plan3').removeClass('plan_on');
                     $('.main5 .main5_bg').css('background-position','0 0');
+                    $('.text_bg_s_wrap').addClass('plan_text_on');
+                    $('.text_bg_r_wrap').removeClass('plan_text_on');
+                    $('.text_bg_l_wrap').removeClass('plan_text_on');
                 } else if(selected_plan == 'mpr') {
                     $('.main5_wrap .content_wrap .right_wrap.plan1').removeClass('plan_on');
                     $('.main5_wrap .content_wrap .right_wrap.plan2').addClass('plan_on');
                     $('.main5_wrap .content_wrap .right_wrap.plan3').removeClass('plan_on');
                     $('.main5 .main5_bg').css('background-position','54% 0');
+                    $('.text_bg_s_wrap').removeClass('plan_text_on');
+                    $('.text_bg_r_wrap').addClass('plan_text_on');
+                    $('.text_bg_l_wrap').removeClass('plan_text_on');
                 } else if(selected_plan == 'mpl') {
                     $('.main5_wrap .content_wrap .right_wrap.plan1').removeClass('plan_on');
                     $('.main5_wrap .content_wrap .right_wrap.plan2').removeClass('plan_on');
                     $('.main5_wrap .content_wrap .right_wrap.plan3').addClass('plan_on');
                     $('.main5 .main5_bg').css('background-position','106% 0');
+                    $('.text_bg_s_wrap').removeClass('plan_text_on');
+                    $('.text_bg_r_wrap').removeClass('plan_text_on');
+                    $('.text_bg_l_wrap').addClass('plan_text_on');
                 }
             });
         });

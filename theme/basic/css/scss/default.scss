@@ -79,18 +79,6 @@ $mf-color: #6664ff;
       }
 }
 
-.main5 {
-
-    .main5_bg {
-        background:url('../../img/dashboard/text_set.png') no-repeat 0% 0%;
-        width: 150px;
-        height: 185px;
-        position: absolute;
-        top: 70%;
-        left: 45%;
-    }
-}
-
 .main6 {
     background:url('../../img/dashboard/main_bg6.jpg') no-repeat;
     background-size: cover;
@@ -767,6 +755,8 @@ $mf-color: #6664ff;
                 left: 30%;
                 z-index: -1;
             }
+
+            
         }
 
         .plan2 {
@@ -787,6 +777,41 @@ $mf-color: #6664ff;
             display: block;
             animation: fadein 2s;
         }
+    }
+
+    .text_bg_s_wrap {
+        background: url('../../img/dashboard/text_set.png') no-repeat 0 0;
+        width: 150px;
+        height: 185px;
+        position: absolute;
+        top: 70%;
+        left: 45%;
+        display: none;
+    }
+
+    .text_bg_r_wrap {
+        background: url('../../img/dashboard/text_set.png') no-repeat 54% 0;
+        width: 150px;
+        height: 185px;
+        position: absolute;
+        top: 70%;
+        left: 45%;
+        display: none;
+    }
+
+    .text_bg_l_wrap {
+        background: url('../../img/dashboard/text_set.png') no-repeat 106% 0;
+        width: 150px;
+        height: 185px;
+        position: absolute;
+        top: 70%;
+        left: 45%;
+        display: none;
+    }
+
+    .plan_text_on {
+        display: block !important;
+        animation: fadein 2s;
     }
 }
 
@@ -1056,7 +1081,7 @@ $mf-color: #6664ff;
 .main8_wrap {
     display: flex;
     width: inherit;
-    height: inherit;
+    height: 850px;
     align-items: center;
     flex-flow: row nowrap; 
     justify-content: space-between;
@@ -1069,7 +1094,7 @@ $mf-color: #6664ff;
         display: flex;
         flex-flow: column nowrap;
         width: 600px;
-        height: 250px;
+        height: 150px;
         font-family: GmarketSans;
 
         p {
@@ -1161,3 +1186,14 @@ $mf-color: #6664ff;
 }
 
 
+.ch_s {
+    animation: fadein 2s;
+}
+
+.ch_r {
+    animation: fadein 2s;
+}
+
+.ch_l {
+    animation: fadein 2s;
+}
