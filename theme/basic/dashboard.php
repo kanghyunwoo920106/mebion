@@ -478,14 +478,17 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                     $('.main5_wrap .content_wrap .right_wrap.plan1').addClass('plan_on');
                     $('.main5_wrap .content_wrap .right_wrap.plan2').removeClass('plan_on');
                     $('.main5_wrap .content_wrap .right_wrap.plan3').removeClass('plan_on');
+                    $('.main5 .main5_bg').css('background-position','0 0');
                 } else if(selected_plan == 'mpr') {
                     $('.main5_wrap .content_wrap .right_wrap.plan1').removeClass('plan_on');
                     $('.main5_wrap .content_wrap .right_wrap.plan2').addClass('plan_on');
                     $('.main5_wrap .content_wrap .right_wrap.plan3').removeClass('plan_on');
+                    $('.main5 .main5_bg').css('background-position','54% 0');
                 } else if(selected_plan == 'mpl') {
                     $('.main5_wrap .content_wrap .right_wrap.plan1').removeClass('plan_on');
                     $('.main5_wrap .content_wrap .right_wrap.plan2').removeClass('plan_on');
                     $('.main5_wrap .content_wrap .right_wrap.plan3').addClass('plan_on');
+                    $('.main5 .main5_bg').css('background-position','106% 0');
                 }
             });
         });

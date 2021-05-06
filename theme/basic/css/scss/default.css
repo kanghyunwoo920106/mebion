@@ -240,7 +240,7 @@
 .main3 {
   background: url("../../img/dashboard/human_bg.png"), url("../../img/dashboard/main_bg3.jpg");
   background-size: auto, 100% 100%;
-  background-position: 90% center,0 0;
+  background-position: 80% center,0 0;
   background-repeat: no-repeat;
 }
 
@@ -311,9 +311,9 @@
 }
 
 .main5 .main5_bg {
-  background: url("../../img/dashboard/s.png") no-repeat 50% 90%;
-  width: 141px;
-  height: 178px;
+  background: url("../../img/dashboard/text_set.png") no-repeat 0% 0%;
+  width: 150px;
+  height: 185px;
   position: absolute;
   top: 70%;
   left: 45%;
@@ -430,7 +430,7 @@
 }
 
 .main1_wrap .title {
-  font-size: 40px;
+  font-size: 56px;
   font-weight: bold;
   display: block;
   font-family: GmarketSans;
@@ -450,8 +450,8 @@
 }
 
 .main1_wrap .sub_title {
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 22px;
+  line-height: 36px;
   font-weight: 100;
 }
 
@@ -479,9 +479,10 @@
 }
 
 .main2_wrap .left_wrap .title {
-  font-size: 36px;
+  font-size: 38px;
   font-weight: bold;
   font-family: GmarketSans;
+  line-height: 50px;
 }
 
 .main2_wrap .right_wrap {
@@ -500,7 +501,7 @@
 }
 
 .main2_wrap .right_wrap .sub_title {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 100;
 }
@@ -526,7 +527,7 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   height: 100px;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
 }
 
@@ -612,9 +613,9 @@
 
 .main2_wrap .right_wrap .icon_wrap p {
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   height: 80px;
-  line-height: 80px;
+  line-height: 100px;
   font-weight: 100;
 }
 
@@ -652,7 +653,7 @@
 }
 
 .main3_wrap .title_wrap p {
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 500;
 }
 
@@ -668,8 +669,12 @@
   font-family: GmarketSans;
 }
 
+.main3_wrap .title_wrap p:nth-child(3) {
+  font-size: 32px;
+}
+
 .main3_wrap .title_wrap p span {
-  font-size: 12px;
+  font-size: 15px;
   color: #6664ff;
   letter-spacing: 0;
   margin: 0 5px;
@@ -683,9 +688,11 @@
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -1px;
+  font-weight: 100;
 }
 
 .main3_wrap .sub_title_wrap p span {
+  font-weight: bold;
   color: #6664ff;
 }
 
@@ -731,20 +738,20 @@
 }
 
 .main4_wrap .title_wrap p {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
 }
 
 .main4_wrap .title_wrap p:last-child {
-  font-size: 16px;
+  font-size: 18px;
   color: #6664ff;
-  font-weight: bold;
+  font-weight: 100;
   font-family: apple;
 }
 
 .main4_wrap .content_wrap {
   width: 100%;
-  height: 500px;
+  height: 540px;
 }
 
 .main4_wrap .content_wrap .sub_title {
@@ -769,10 +776,11 @@
           align-items: center;
   width: 1570px;
   margin: 0 0 0 auto;
+  line-height: 75px;
 }
 
 .main4_wrap .content_wrap .sub_title .sub_title_wrap > p:first-child {
-  font-size: 38px;
+  font-size: 68px;
   font-weight: bold;
   text-align: center;
   font-family: GmarketSans;
@@ -781,31 +789,33 @@
 .main4_wrap .content_wrap .sub_title .sub_title_wrap > p:first-child::after {
   content: "";
   display: block;
-  width: 40px;
+  width: 50px;
   height: 2px;
   background: #000;
 }
 
 .main4_wrap .content_wrap .sub_title .sub_title_wrap .right_text_wrap {
-  font-size: 16px;
+  font-size: 28px;
   font-weight: bold;
-  margin: 0 10px;
+  margin: 0 20px;
   line-height: 17px;
 }
 
 .main4_wrap .content_wrap .sub_title .sub_title_wrap .right_text_wrap p {
   font-family: GmarketSans;
   font-weight: bold;
+  line-height: 16px;
 }
 
 .main4_wrap .content_wrap .sub_title .sub_title_wrap .right_text_wrap p:last-child {
   color: #6664ff;
-  font-size: 12px;
+  font-size: 18px;
+  line-height: 35px;
 }
 
 .main4_wrap .content_wrap .content {
   background: #f8f8f8;
-  width: 90%;
+  width: 85%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -814,12 +824,11 @@
       flex-flow: nowrap;
   font-size: 16px;
   padding: 30px 0;
-  font-weight: bold;
   z-index: 0;
 }
 
 .main4_wrap .content_wrap .content .container_wr {
-  width: 1570px;
+  width: 1470px;
   margin: 0 0 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -827,6 +836,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: -1;
 }
 
 .main4_wrap .content_wrap .content .left_wrap {
@@ -840,6 +850,13 @@
   height: 200px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  height: 250px;
+}
+
+.main4_wrap .content_wrap .content .left_wrap > p {
+  font-size: 20px;
+  font-weight: bold;
+  height: 110px;
 }
 
 .main4_wrap .content_wrap .content .left_wrap .text_wrap {
@@ -855,6 +872,8 @@
 .main4_wrap .content_wrap .content .left_wrap .text_wrap .list_wrap {
   line-height: 2em;
   letter-spacing: -1px;
+  font-size: 18px;
+  font-size: 100;
 }
 
 .main4_wrap .content_wrap .content .left_wrap .text_wrap .list_wrap p::before {
@@ -869,7 +888,7 @@
 .main4_wrap .content_wrap .content .right_wrap {
   position: absolute;
   top: -15%;
-  right: 0;
+  right: 4%;
 }
 
 .main4_wrap .content_wrap .content .right_wrap .img_wrap {
@@ -893,9 +912,9 @@
 .main4_wrap .content_wrap .content .right_wrap .next_arrow {
   background: #ffd308 url("../../img/dashboard/arrow.png") no-repeat center 70%;
   width: 160px;
-  height: 100px;
+  height: 120px;
   position: absolute;
-  bottom: -12%;
+  bottom: -16%;
   right: -17%;
   z-index: -1;
   cursor: pointer;
@@ -935,15 +954,15 @@
 }
 
 .main5_wrap .title_wrap p {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
   font-family: GmarketSans;
 }
 
 .main5_wrap .title_wrap p:last-child {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 100;
   color: #6664ff;
-  font-weight: bold;
   font-family: apple;
 }
 
@@ -973,15 +992,19 @@
   height: 445px;
 }
 
+.main5_wrap .content_wrap .left_wrap .explain_wrap {
+  width: 494px;
+}
+
 .main5_wrap .content_wrap .left_wrap .explain_wrap a:hover {
   text-decoration: none;
   color: #6664ff;
 }
 
 .main5_wrap .content_wrap .left_wrap .explain_wrap a p {
-  font-size: 16px;
+  font-size: 20px;
   border-bottom: 1px solid #eaeaea;
-  padding: 10px 0;
+  padding: 18px 0;
   font-family: GmarketSans;
   font-weight: 300;
 }
@@ -1002,7 +1025,8 @@
 
 .main5_wrap .content_wrap .left_wrap .explain_wrap a p span {
   color: #c1c5ce;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: 100;
   margin: 0 0 0 10px;
   font-family: apple;
 }
@@ -1028,12 +1052,12 @@
 }
 
 .main5_wrap .content_wrap .right_wrap .plan_wrap .title_wrap p {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
 }
 
 .main5_wrap .content_wrap .right_wrap .plan_wrap .title_wrap p:last-child {
-  font-size: 16px;
+  font-size: 18px;
   color: #6664ff;
   font-weight: bold;
   letter-spacing: 0;
@@ -1064,8 +1088,8 @@
 }
 
 .main5_wrap .content_wrap .right_wrap .plan_wrap .text_wrap .list_wrap p {
-  font-weight: bold;
-  font-size: 16px;
+  font-weight: 100;
+  font-size: 18px;
 }
 
 .main5_wrap .content_wrap .right_wrap .plan_wrap .text_wrap .list_wrap p::before {
@@ -1079,32 +1103,20 @@
 
 .main5_wrap .content_wrap .right_wrap .box_wrap {
   background: #6664ff;
-  width: 100%;
-  height: 290px;
+  width: 120%;
+  height: 380px;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 30%;
   z-index: -1;
 }
 
 .main5_wrap .content_wrap .plan2 .box_wrap {
-  background: #3e3e77;
-  width: 100%;
-  height: 290px;
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  z-index: -1;
+  background: #009df7;
 }
 
 .main5_wrap .content_wrap .plan3 .box_wrap {
-  background: #f85858;
-  width: 100%;
-  height: 290px;
-  position: absolute;
-  top: 50%;
-  left: 30%;
-  z-index: -1;
+  background: #ffd308;
 }
 
 .main5_wrap .content_wrap .plan_on {
@@ -1147,14 +1159,14 @@
 }
 
 .main6_wrap .list_wrap .title {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
   letter-spacing: -1px;
   line-height: 28px;
 }
 
 .main6_wrap .list_wrap .title span {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 100;
   letter-spacing: 0;
 }
@@ -1237,13 +1249,13 @@
 .main6_wrap .list_wrap .list_section_wrap .list_section p {
   font-weight: bold;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .main6_wrap .list_wrap .list_section_wrap .list_section .text_wrap {
   margin: 15px 0 0 0;
-  line-height: 22px;
-  font-size: 14px;
+  line-height: 28px;
+  font-size: 18px;
 }
 
 .main7_wrap {
@@ -1267,7 +1279,7 @@
 
 .main7_wrap .title {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 32px;
   letter-spacing: -1px;
   height: 150px;
   font-family: GmarketSans;
@@ -1492,7 +1504,7 @@
 
 .main8_wrap .left_wrap {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 32px;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1516,7 +1528,7 @@
 }
 
 .main8_wrap .right_wrap {
-  width: 600px;
+  width: 700px;
   height: 500px;
 }
 
@@ -1537,6 +1549,7 @@
 .main8_wrap .right_wrap form input {
   border: 1px solid #c9c9cc;
   background: none;
+  width: 90%;
   height: 60px;
   color: #fff;
 }
@@ -1579,6 +1592,7 @@
 .main8_wrap .right_wrap form textarea {
   background: none;
   color: #fff;
+  width: 90%;
   height: 150px;
 }
 
