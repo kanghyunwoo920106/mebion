@@ -32,9 +32,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                 <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_THEME_URL ?>/img/svg/logo_white.svg" alt="<?php echo $config['cf_title']; ?>"></a>
             </div>
             <nav>
-                <div class="nav_list"><a href="#">About</a></div>
-                <div class="nav_list"><a href="#">MP PLAN</a></div>
-                <div class="nav_list"><a href="#">Contact</a></div>
+                <div class="nav_list"><a href="page.php?id=dashboard#secondPage">About</a></div>
+                <div class="nav_list"><a href="page.php?id=dashboard#thirdPage">MP PLAN</a></div>
+                <div class="nav_list"><a href="page.php?id=dashboard#eightPage">Contact</a></div>
             </nav>
         </div>
         <!-- <ul class="hd_login">        

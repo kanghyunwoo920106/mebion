@@ -298,7 +298,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                                     <p>가상화폐결제</p>
                                 </div>
                                 <div class="text_wrap">
-                                    <div>- 비트코인, 이더리운, EOS 코인</div>
+                                    <div>- 비트코인, 이더리움, EOS 코인</div>
                                     <div>- ERC-20 토큰</div>
                                 </div>
                             </div>
@@ -386,6 +386,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             scrollBar: false,
             keyboardScrolling: true,
             navigation: true,
+            controlArrows: true,
             autoScrolling: true,
             scrollHorizontally: true,
             anchors: ['firstPage', 'secondPage','thirdPage','fourPage','fivePage','sixPage','sevenPage','eightPage'],
