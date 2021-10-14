@@ -38,7 +38,6 @@ if (G5_IS_MOBILE) {
                     <p>support@logcompany.kr</p>
                 </div>
                 </section>
-                -
                 <section class='company_info'>
                     <span>로그컴퍼니</span> |
                     <span>대표 : 김주원</span>  | 
@@ -49,6 +48,7 @@ if (G5_IS_MOBILE) {
                 <p class="copy">Copyright ⓒ Marketing Partner. All rights Reserved.</p>
             </div>
         </div>
+        
         <!-- <div id="ft_link" class="ft_cnt">
             <a href="<?php echo get_pretty_url('content', 'company'); ?>">회사소개</a>
             <a href="<?php echo get_pretty_url('content', 'privacy'); ?>">개인정보처리방침</a>

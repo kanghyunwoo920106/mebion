@@ -494,7 +494,7 @@ box-sizing:content-box;
 
 #fullpage .section {background-repeat:no-repeat;}
 
-#wrap {min-width: 1600px;}
+/* #wrap {min-width: 1600px;} */
 
 .container_wr {width: 1600px;height: 100%;margin:0 auto;zoom: 1;}
 #fp-nav ul li {margin: 35px 55px !important;}

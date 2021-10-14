@@ -9,7 +9,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <div class="container_wr">
                 <div class="main1_wrap" data-aos="fade-right">
                     <p class="title">Marketing Partner <b>.</b></p>
-                    <p class="sub_title">“마케팅 파트너” 는<br> 수십계의 파트너사와 다년간 상생하면서 네트워크 마케팅 솔루션, 블록체인을 이용 <br>한 다양한 비즈니스에 여러분을 위한 마케팅 파트너로써 굳건히 자리하고 있습니다</p>
+                    <p class="sub_title">“마케팅 파트너” 는 수십계의 파트너사와 다년간 상생하면서 네트워크 마케팅 솔루션, 블록체인을 이용한 다양한 비즈니스에 여러분을 위한 마케팅 파트너로써 굳건히 자리하고 있습니다</p>
                 </div>
                 <div class="mouse_scroll_wrap" data-aos="fade-left">
                     <div class="mouse_img_wrap"></div>
@@ -367,12 +367,14 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         </form>
                     </div>
                 </div>
+                
             </div>
             <?php 
                 include_once(G5_THEME_PATH.'/tail.php');
             ?>
         </div>
     </div>
+    
 </div>
 
 <script>
@@ -408,6 +410,11 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                     $('#fp-slidesNav ul li a span').css('border','1px solid #000');
                     $('#fp-nav ul li a span').css('background','none').css('border','1px solid #000');
                 }
+                if(anchors == 1) {
+                    $('.top_button').fadeOut();
+                } else {
+                    $('.top_button').fadeIn();
+                }
             },
             afterLoad: function(anchors,index) {
                 if(anchors == 'firstPage' || anchors == 'secondPage' || anchors == 'sixPage' || anchors == 'eightPage') {
@@ -419,6 +426,12 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                     $('.mouse_scroll_wrap .mouse_img_wrap').css('background-position','-32px 0');
                     $('.mouse_scroll_wrap p').css('color','#000');
                     $('#fp-nav ul li a.active span').css('background','#000');
+                }
+
+                if(anchors == 'firstPage') {
+                    $('.top_button').fadeOut();
+                } else {
+                    $('.top_button').fadeIn();
                 }
 
                 $('.section.active [data-aos]').each(function(){
@@ -527,7 +540,6 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 $('#fp-nav').css('display','block');
             }
         });
-        
 </script>
 
             

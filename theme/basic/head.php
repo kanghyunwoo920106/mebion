@@ -131,6 +131,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             <div id="gnb_all_bg"></div>
         </div>
     </nav> -->
+    <a class="top_button" href="#">
+        <i class="fa fa-arrow-up"></i>
+    </a>
     <script>
     
     $(function(){
@@ -143,9 +146,21 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
     });
 
     </script>
+    
 </div>
 <!-- } 상단 끝 -->
+<script>
+      // 탑버튼
+    $(function() {
+            var nowUrl = location.href;
+            var arrUrl = nowUrl.split('#');
+            var targetUrl = arrUrl[0].concat('#firstPage');
 
+        $('.top_button').on('click',function() {
+            $(this).attr('href',targetUrl);
+        });
+    })  
+    </script>
 <hr>
 
 <!-- 콘텐츠 시작 { -->
