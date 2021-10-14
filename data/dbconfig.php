@@ -3,7 +3,7 @@ if (!defined('_GNUBOARD_')) exit;
 define('G5_MYSQL_HOST', 'localhost');
 define('G5_MYSQL_USER', 'root');
 define('G5_MYSQL_PASSWORD', 'willsoft0780!@');
-define('G5_MYSQL_DB', 'ttt');
+define('G5_MYSQL_DB', 'mpartner');
 define('G5_MYSQL_SET_MODE', true);
 
 define('G5_TABLE_PREFIX', 'g5_');

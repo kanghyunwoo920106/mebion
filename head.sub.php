@@ -98,6 +98,7 @@ if(G5_IS_MOBILE) {
 if(!defined('G5_IS_ADMIN'))
     echo $config['cf_add_script'];
 ?>
+
 </head>
 <body<?php echo isset($g5['body_script']) ? $g5['body_script'] : ''; ?>>
 <?php

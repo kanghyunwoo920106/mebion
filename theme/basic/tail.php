@@ -24,18 +24,26 @@ if (G5_IS_MOBILE) {
                 </a>
             </div>
             <div>
+                <section class='footer'>
                 <div>
                     <p>Address</p>
                     <p>서울특별시 강남구 테헤란로5길 25, 6층</p>
                 </div>
                 <div>
                     <p>Contact</p>
-                    <p>tel : 02-564-0780  /  fax : 0507-711-0780</p>
+                    <p>TEL : 02-564-0780  /  fax : 0507-711-0780</p>
                 </div>
                 <div>
                     <p>E-mail</p>
-                    <p>one0780@logcompany.co.kr</p>
+                    <p>support@logcompany.kr</p>
                 </div>
+                </section>
+                -
+                <section class='company_info'>
+                    <span>로그컴퍼니</span> |
+                    <span>대표 : 김주원</span>  | 
+                    <span>사업자등록번호 : 232-02-01269</span>
+                </section>
             </div>
             <div>
                 <p class="copy">Copyright ⓒ Marketing Partner. All rights Reserved.</p>

@@ -197,7 +197,11 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2)}
 #ft_wr .ft_wrap .copy {color: #fff !important;}
 #ft_wr .ft_wrap a img {width: 150px;}
 #ft_wr .ft_wrap > div:nth-child(1) a {display: block;}
-#ft_wr .ft_wrap > div:nth-child(2) {display: flex;justify-content: space-between;width: 700px;}
+#ft_wr section {width: 700px;}
+section.footer{display: flex;justify-content: space-between;}
+section.company_info{color:#636363;font-size:14px;}
+section.company_info span{padding:0 5px 0 3px;}
+section.company_info span:first-child{padding-left:0;}
 
 
 /* 게시물 선택복사 선택이동 */
@@ -487,7 +491,7 @@ box-sizing:content-box;
 
 /* dashboard */
 .z_20 {z-index: 20;}
-#fullpage {}
+
 #fullpage .section {background-repeat:no-repeat;}
 
 #wrap {min-width: 1600px;}

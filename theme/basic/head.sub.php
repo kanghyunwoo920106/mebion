@@ -103,8 +103,8 @@ add_javascript('<script src="'.G5_JS_URL.'/placeholders.min.js"></script>', 0);
 add_javascript('<script src="'.G5_THEME_URL.'/js/common.js"></script>', 0);
 add_stylesheet('<link rel="stylesheet" href="'.G5_JS_URL.'/font-awesome/css/font-awesome.min.css">', 0);
 
-include_once(G5_THEME_PATH.'/modal.html');
-include_once(G5_THEME_PATH.'/popup.php');
+// include_once(G5_THEME_PATH.'/modal.html');
+// include_once(G5_THEME_PATH.'/popup.php');
 if(G5_IS_MOBILE) {
     add_javascript('<script src="'.G5_JS_URL.'/modernizr.custom.70111.js"></script>', 1); // overflow scroll 감지
 }
