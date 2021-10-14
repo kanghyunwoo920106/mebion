@@ -1693,7 +1693,7 @@
   line-height: 70px;
 }
 
-@media (min-width: 335px) and (max-width: 757px) {
+@media (min-width: 758px) and (max-width: 1023px) {
   .container_wr {
     width: auto;
     height: 100%;
