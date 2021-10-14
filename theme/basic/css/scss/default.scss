@@ -1204,7 +1204,7 @@ $mf-color: #6664ff;
 .top_button {position: absolute;background:#6664ff;width: 70px;height: 70px;right: 2%;bottom: -550%;z-index: 10;border-radius: 50px;border: none;display: none;text-align: center;}
 .top_button i {color: #000;font-size: 40px;color: #fff;line-height: 70px;}
 
-@include tablet {
+@include mobile {
     .section.main1, .section.main2 {
     }
     
