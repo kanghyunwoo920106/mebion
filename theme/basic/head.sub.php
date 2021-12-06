@@ -30,13 +30,20 @@ header("Cache-Control: no-cache"); // HTTP/1.1
 header("Expires: 0"); // rfc2616 - Section 14.21
 header("Pragma: no-cache"); // HTTP/1.0
 */
+
+header('Access-Control-Allow-Origin','*');
+header('Access-Control-Allow-Headers','*');
+
+
 ?>
 <!doctype html>
 <html lang="ko">
 <head>
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <meta charset="utf-8">
+
 <?php
+
 if (G5_IS_MOBILE) {
     echo '<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">'.PHP_EOL;
     echo '<meta name="HandheldFriendly" content="true">'.PHP_EOL;
@@ -44,12 +51,16 @@ if (G5_IS_MOBILE) {
 } else {
     echo '<meta http-equiv="imagetoolbar" content="no">'.PHP_EOL;
     echo '<meta http-equiv="X-UA-Compatible" content="IE=edge">'.PHP_EOL;
+    echo '<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">'.PHP_EOL;
+    echo '<meta name="HandheldFriendly" content="true">'.PHP_EOL;
+    echo '<meta name="format-detection" content="telephone=no">'.PHP_EOL;
 }
 
 if($config['cf_add_meta'])
     echo $config['cf_add_meta'].PHP_EOL;
 ?>
 <title><?php echo $g5_head_title; ?></title>
+
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="<?php echo run_replace('head_css_url', G5_THEME_CSS_URL.'/'.(G5_IS_MOBILE ? 'mobile' : 'default').'.css?ver='.G5_CSS_VER, G5_THEME_URL); ?>">
 <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet">

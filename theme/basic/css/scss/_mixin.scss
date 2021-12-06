@@ -22,6 +22,11 @@
     }
 }
 
+@mixin desktop-wide-wide {
+    @media (min-width: #{$breakpoint-desktop-wide-wide}) {
+        @content;
+    }
+}
 
 @mixin box-shadow($h:10px,$v:10px,$b:0px,$s:0px,$c:#ccc) {
     -webkit-box-shadow:$h $v $b $s $c;

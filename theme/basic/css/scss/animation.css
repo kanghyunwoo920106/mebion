@@ -90,14 +90,14 @@
 
 @-webkit-keyframes box_move4 {
   from {
-    top: 70%;
+    top: 10%;
     left: 90%;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
   to {
-    left: 20%;
     top: 20%;
+    left: 20%;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
@@ -105,14 +105,14 @@
 
 @keyframes box_move4 {
   from {
-    top: 70%;
+    top: 10%;
     left: 90%;
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
   to {
-    left: 20%;
     top: 20%;
+    left: 20%;
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
@@ -155,5 +155,59 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes move_top_btn {
+  from {
+    bottom: 100px;
+  }
+  to {
+    bottom: 120px;
+  }
+}
+
+@keyframes move_top_btn {
+  from {
+    bottom: 100px;
+  }
+  to {
+    bottom: 120px;
+  }
+}
+
+@-webkit-keyframes move_top_btn2 {
+  from {
+    bottom: 170px;
+  }
+  to {
+    bottom: 190px;
+  }
+}
+
+@keyframes move_top_btn2 {
+  from {
+    bottom: 170px;
+  }
+  to {
+    bottom: 190px;
+  }
+}
+
+@-webkit-keyframes move_top_btn3 {
+  from {
+    bottom: 80px;
+  }
+  to {
+    bottom: 100px;
+  }
+}
+
+@keyframes move_top_btn3 {
+  from {
+    bottom: 80px;
+  }
+  to {
+    bottom: 100px;
   }
 }

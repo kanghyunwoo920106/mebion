@@ -36,12 +36,12 @@
 
 @keyframes box_move4 {
     from {
-        top: 70%;
+        top: 10%;
         left: 90%;
         transform: rotate(0deg);
     } to {
-        left: 20%;
         top: 20%;
+        left: 20%;
         transform: rotate(360deg);
     }
 }
@@ -62,3 +62,26 @@
     }
 }
 
+@keyframes move_top_btn {
+    from {
+        bottom: 100px;
+    } to {
+        bottom: 120px;
+    }
+}
+
+@keyframes move_top_btn2 {
+    from {
+        bottom: 170px;
+    } to {
+        bottom: 190px;
+    }
+}
+
+@keyframes move_top_btn3 {
+    from {
+        bottom: 80px;
+    } to {
+        bottom: 100px;
+    }
+}

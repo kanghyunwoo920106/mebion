@@ -56,7 +56,22 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                     <div class="mouse_img_wrap"></div>
                 </div>
             </div>
+        <script>
+            var arr = [[],[],[],[],[],[]];
+            var arr_num = [];
+            for(var i = 0; i < 6; i++) {
+                arr_num[i] = Math.round(Math.random()*44 + 1);
+                arr[i].push(arr_num[i]);
+                for(var j = 0; j < 6; j++) {
 
+                }
+                console.log(arr[i])
+            }
+            
+            function solution() {
+
+            }
+        </script>
         </div> 
         <div class="section main3">
             <div class="box1"></div>
@@ -355,13 +370,13 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         <p>Excepteur sint occaecat cupidatat <br>non proident, sunt in cuipa qui</p>
                     </div>
                     <div class="right_wrap" data-aos="fade-left">
-                        <form action="">
-                            <input type="text" class="form-control" placeholder="Company">
-                            <input type="text" class="form-control" placeholder="Name">
-                            <input type="text" class="form-control" placeholder="Email">
+                        <form action="" id="frm_contact" onsubmit="return frm_submit(this);">
+                            <input type="text" id="company" class="form-control" minlength="1" maxlength="20" placeholder="Company">
+                            <input type="text" id="erum" class="form-control" placeholder="Name">
+                            <input type="text" id="email" name="email" class="form-control" placeholder="Email">
                             <textarea class="form-control" cols="30" rows="10" placeholder="Contents"></textarea>
                             <div>
-                                <input type="checkbox" id="agree"><label for="agree"></label><label for="agree" class="agree_text">개인정보처리방침에 동의합니다.</label>
+                                <input type="checkbox" id="agree" name="agree"><label for="agree"></label><label for="agree" class="agree_text">개인정보처리방침에 동의합니다.</label>
                             </div>
                             <input type="submit" class="form-control" value="SEND">
                         </form>
@@ -372,6 +387,10 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             <?php 
                 include_once(G5_THEME_PATH.'/tail.php');
             ?>
+        </div>
+        <div class="section">
+            <div class="slide">1</div>
+            <div class="slide">2</div>
         </div>
     </div>
     
@@ -390,6 +409,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             navigation: true,
             controlArrows: true,
             autoScrolling: true,
+            slidesNavigation: true,
             scrollHorizontally: true,
             anchors: ['firstPage', 'secondPage','thirdPage','fourPage','fivePage','sixPage','sevenPage','eightPage'],
             
@@ -540,6 +560,48 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 $('#fp-nav').css('display','block');
             }
         });
+
+        $('#erum').keyup(function(e) {
+            var isHan = /[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
+            var erum = $('#erum').val();
+
+            if(isHan.test(erum)) {
+                alert('한글만 입력 가능');
+                $(this).val(erum.replace(isHan,''));
+            }
+        });
+
+        function frm_submit(f) {
+            var email = $('#email').val();
+            var emailPattern = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+
+            var inputCompany = $('#company').val();
+            var inputName = $('#erum').val();
+
+            if(inputCompany == '') {
+                alert('회사명을 입력해 주세요.');
+                return false;
+            }
+
+            if(inputName == '') {
+                alert('이름을 입력해 주세요.');
+                return false;
+            }
+
+            if(!emailPattern.test(email)) {
+                alert('이메일 형식에 맞지 않습니다.')
+                return false;
+            } 
+
+            if (!f.agree.checked) {
+                alert("개인정보처리방침에 동의하셔야 문의 가능합니다.");
+                return false;
+            } else {
+                alert("문의가 처리되었습니다");
+                return false;
+            }
+            return true;
+        }
 </script>
 
             

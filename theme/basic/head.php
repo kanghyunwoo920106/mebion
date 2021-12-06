@@ -27,16 +27,43 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
     }
     ?>
     <div id="hd_wrapper">
-        <div class="header_wrap">
+        <!-- <div class="header_wrap">
             <div id="logo">
                 <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_THEME_URL ?>/img/svg/logo_white.svg" alt="<?php echo $config['cf_title']; ?>"></a>
             </div>
             <nav>
-                <div class="nav_list"><a href="page.php?id=dashboard#secondPage">About</a></div>
+                <div class="nav_list"><a href="<?php echo G5_URL?>/test.php">About</a></div>
                 <div class="nav_list"><a href="page.php?id=dashboard#thirdPage">MP PLAN</a></div>
                 <div class="nav_list"><a href="page.php?id=dashboard#eightPage">Contact</a></div>
             </nav>
-        </div>
+        </div> -->
+        
+        <nav class="header navbar navbar-expand-md navbar-light">
+            <div id="logo">
+                <a href="<?php echo G5_URL ?>"><img src="<?php echo G5_THEME_URL ?>/img/dashboard/logo_white.png" alt="<?php echo $config['cf_title']; ?>"></a>
+            </div>
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <button class="open_menu navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <ul class="nav_list_wrap">
+                <li>Company</li>
+                <li>Business</li>
+                <li>Contact</li>
+            </ul>
+            <!-- <div class="collapse navbar-collapse" id="navbar">
+                <div class="navbar-nav">
+                    <div class="nav-item"><a class="nav-link" href="<?php echo G5_URL?>/test.php">Company</a></div>
+                    <div class="nav-item"><a class="nav-link" href="page.php?id=dashboard#thirdPage">Business</a></div>
+                    <div class="nav-item"><a class="nav-link" href="page.php?id=dashboard#eightPage">Contact</a></div>
+                </div>
+            </div> -->
+            
+        </nav>
+        
         <!-- <ul class="hd_login">        
             <?php if ($is_member) {  ?>
             <li><a href="<?php echo G5_BBS_URL ?>/member_confirm.php?url=<?php echo G5_BBS_URL ?>/register_form.php">정보수정</a></li>
@@ -51,6 +78,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
         </ul> -->
     </div>
+    
     
     <!-- <nav id="gnb">
         <h2>메인메뉴</h2>
@@ -134,9 +162,29 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
     <a class="top_button" href="#">
         <i class="fa fa-arrow-up"></i>
     </a>
-    <script>
-    
-    $(function(){
+    <div class="page_move_btn">
+    </div>
+</div>
+<div class="nav_bar_wrap">
+    <div class="nav_bar">
+        <p><a href="#">Company</a></p>
+        <p><a href="#">Business</a></p>
+        <p><a href="#">Contact</a></p>
+    </div>
+</div>
+<div class="menu_back_drop fade"></div>
+<script>
+    $(function() {
+
+        // 탑버튼
+        var nowUrl = location.href;
+        var arrUrl = nowUrl.split('#');
+        var targetUrl = arrUrl[0].concat('#firstPage');
+
+        $('.top_button').on('click',function() {
+            $(this).attr('href',targetUrl);
+        });
+
         $(".gnb_menu_btn").click(function(){
             $("#gnb_all, #gnb_all_bg").show();
         });
@@ -144,24 +192,8 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             $("#gnb_all, #gnb_all_bg").hide();
         });
     });
-
-    </script>
-    
-</div>
+</script>
 <!-- } 상단 끝 -->
-<script>
-      // 탑버튼
-    $(function() {
-            var nowUrl = location.href;
-            var arrUrl = nowUrl.split('#');
-            var targetUrl = arrUrl[0].concat('#firstPage');
-
-        $('.top_button').on('click',function() {
-            $(this).attr('href',targetUrl);
-        });
-    })  
-    </script>
-<hr>
 
 <!-- 콘텐츠 시작 { -->
 <!-- <div id="wrapper"> --> 

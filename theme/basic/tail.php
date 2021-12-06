@@ -25,18 +25,18 @@ if (G5_IS_MOBILE) {
             </div>
             <div>
                 <section class='footer'>
-                <div>
-                    <p>Address</p>
-                    <p>서울특별시 강남구 테헤란로5길 25, 6층</p>
-                </div>
-                <div>
-                    <p>Contact</p>
-                    <p>TEL : 02-564-0780  /  fax : 0507-711-0780</p>
-                </div>
-                <div>
-                    <p>E-mail</p>
-                    <p>support@logcompany.kr</p>
-                </div>
+                    <div>
+                        <p>Address</p>
+                        <p>서울특별시 강남구 테헤란로5길 25, 6층</p>
+                    </div>
+                    <div>
+                        <p>Contact</p>
+                        <p>TEL : 02-564-0780  /  fax : 0507-711-0780</p>
+                    </div>
+                    <div>
+                        <p>E-mail</p>
+                        <p>support@logcompany.kr</p>
+                    </div>
                 </section>
                 <section class='company_info'>
                     <span>로그컴퍼니</span> |

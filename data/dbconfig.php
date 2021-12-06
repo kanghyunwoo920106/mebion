@@ -40,4 +40,5 @@ $g5['faq_master_table'] = G5_TABLE_PREFIX.'faq_master'; // 자주하시는 질�
 $g5['new_win_table'] = G5_TABLE_PREFIX.'new_win'; // 새창 테이블
 $g5['menu_table'] = G5_TABLE_PREFIX.'menu'; // 메뉴관리 테이블
 $g5['social_profile_table'] = G5_TABLE_PREFIX.'member_social_profiles'; // 소셜 로그인 테이블
+$g5['alliance_hospital'] = G5_TABLE_PREFIX.'alliance_hospital'; // 소셜 로그인 테이블
 ?>
