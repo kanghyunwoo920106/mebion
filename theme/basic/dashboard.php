@@ -813,15 +813,15 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 $progressBarLabel.text( calc + '% completed' );
                 
                 if(nextSlide == 0) {
-                    $('.section3 .mVisual_wrap').css('background-image','url("<?=G5_THEME_URL?>/img/dashboard/section3_bg1.png")');
+                    $('.section3 .mVisual_wrap').css('background-image','url("<?=G5_THEME_URL?>/img/dashboard/section3_bg1.png")').css('transition','all .5s');
                 }
 
                 if(nextSlide == 1) {
-                    $('.section3 .mVisual_wrap').css('background-image','url("<?=G5_THEME_URL?>/img/dashboard/section3_bg2.png")')
+                    $('.section3 .mVisual_wrap').css('background-image','url("<?=G5_THEME_URL?>/img/dashboard/section3_bg2.png")').css('transition','all .5s');
                 }
 
                 if(nextSlide == 2) {
-                    $('.section3 .mVisual_wrap').css('background-image','url("<?=G5_THEME_URL?>/img/dashboard/section3_bg3.png")')
+                    $('.section3 .mVisual_wrap').css('background-image','url("<?=G5_THEME_URL?>/img/dashboard/section3_bg3.png")').css('transition','all .5s');
                 }
             });
 
