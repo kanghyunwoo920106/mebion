@@ -42,9 +42,12 @@ header('Access-Control-Allow-Headers','*');
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 <meta charset="utf-8">
 
+<<<<<<< Updated upstream
 <link rel="shortcut icon" href="/favicon.ico" />
 <link rel="icon" href="/favicon.ico">
 
+=======
+>>>>>>> Stashed changes
 <!-- 기본 공유 설정 //-->
 <meta name="title" content="mebion" />
 <meta name="subject" content="mebion" />
