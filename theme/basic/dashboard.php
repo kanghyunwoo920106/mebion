@@ -824,13 +824,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                     $('.section3 .mVisual_wrap').css('background-image','url("<?=G5_THEME_URL?>/img/dashboard/section3_bg3.png")').css('transition','all .5s');
                 }
 
-                if($('.slick-active'))
-
             });
 
             $('.explain_wrap .slider').not('.slick-initialized').slick(slickOption);
-
-            $('.section3_slick_wrap')
         }
 
         
