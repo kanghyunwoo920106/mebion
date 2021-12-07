@@ -1115,7 +1115,7 @@ footer {
 
     #hd_pop,#hd_wrapper,#tnb .inner,#gnb .gnb_wrap,#container_wr,
     #ft_wr {width:auto}
-    #logo a img {width: 120px;}
+    #logo a img {width: 120px !important;}
 }
 
 @include desktop-wide-wide {

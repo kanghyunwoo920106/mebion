@@ -1668,7 +1668,7 @@ footer .container .address_wrap {
     width: auto;
   }
   #logo a img {
-    width: 120px;
+    width: 120px !important;
   }
 }
 
