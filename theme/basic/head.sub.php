@@ -50,10 +50,10 @@ header('Access-Control-Allow-Headers','*');
 <meta name="subject" content="mebion" />
 <meta name="keywords" content="mebion" />
 <meta name="description" content="mebion" />
-<link rel="image_src" href="<?=G5_THEME_URL?>/img/default_2.png" />
+<link rel="image_src" href="<?=G5_THEME_URL?>/img/default.png" />
 
 <!--대표 이미지 URL (이미지를 여러 개 지정할 수 있음) //-->
-<meta name="apple-mobile-web-app-title" content="<?=G5_THEME_URL?>/img/default_2.png" />
+<meta name="apple-mobile-web-app-title" content="<?=G5_THEME_URL?>/img/default.png" />
 <meta name="format-detection" content="telephone=no" />
 
 <?php
