@@ -187,6 +187,50 @@ border:1px solid #558ab7 !important;
     }
 }
 
+.section6 {
+    .mVisual_wrap {
+        background: url('../../img/dashboard/section_bg3.png') no-repeat;
+        background-size: cover;
+    }
+
+    .main_wrap {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: baseline;
+        height: 100%;
+        
+        h1.title {
+            font-size: 10em;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+            color: #2f3135;
+        }
+    
+        p.sub_text {
+            font-size: 1.5em;
+            font-weight: 200;
+            color: #2f3135;
+            text-align: left;
+            width: 550px;
+            word-break: keep-all;
+        }
+
+        .mouse_scroll {
+            position: absolute;
+            animation: move_top_btn2 1s linear infinite alternate;
+            text-align: left;
+            
+            p {
+                color: #2f3135;
+                margin: 15px 0;
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
 .section2 {
     .mVisual_wrap {
         background: url('../../img/dashboard/section_bg2.png') no-repeat;
@@ -267,14 +311,20 @@ border:1px solid #558ab7 !important;
 }
 
 .section3 {
+
     .mVisual_wrap {
-        background: url('../../img/dashboard/section3_bg1.png') no-repeat,url('../../img/dashboard/section_visual2.png') no-repeat;
-        background-size: 50% 100%, 26% 70%;
-        background-position: left, right bottom;
+        // background-image: url('../../img/dashboard/section3_bg1.png') no-repeat,;
+        background: url("../../img/dashboard/section3_bg1.png") no-repeat;
+        background-size: 50% 100%;
+        background-position: left;
         background-color: #fbfcfe;
+        background-repeat: no-repeat;
     }
 
     .main_wrap {
+        background: url('../../img/dashboard/section_visual2.png') no-repeat;
+        background-size: 26% 70%;
+        background-position: 100% bottom;
         display: flex;
         height: inherit;
         justify-content: end;
@@ -649,6 +699,33 @@ footer {
         }
     }
 
+    .section6 {
+        .main_wrap {
+            
+            h1.title {
+                font-size: 15vw;
+            }
+        
+            p.sub_text {
+                font-size: 4vw;
+                width: auto;
+                word-break: keep-all;
+            }
+
+            .mouse_scroll {
+                position: absolute;
+                animation: move_top_btn3 1s linear infinite alternate;
+                text-align: center;
+
+                p {
+                    color: #2f3135;
+                    margin: 15px 0;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+
     .section2 {
         .mVisual_wrap {
             background: none;
@@ -704,30 +781,51 @@ footer {
     }
 
     .section3 {
+        .slick-slide {
+            border: none;
+        }
+
+        .slick-current {
+            border: none;
+        }
+
+        .slick-active {
+            border: none;
+        }
         .mVisual_wrap {
-            background: none;
+            // background: none !important;
+            background-size: contain;
+            background-color: #fff;
+            background-color: rgba(255,255,255,0.5);
+            background-image: url('../../img/dashboard/section3_bg1.png');
+            background-repeat: no-repeat;
 
-            &::before {
-                content: '';
-                background: url('../../img/dashboard/section_visual2.png') no-repeat;
-                background-position: center center;
-                background-size: contain;
-                position: absolute;
-                top: 0%;
-                left: 0%;
-                right: 0%;
-                bottom: 0%;
-                opacity: 0.1;
-
-            }
+            
+            // &::before {
+            //     content: '';
+            //     background: url('../../img/dashboard/section_visual2.png') no-repeat;
+            //     background-position: center center;
+            //     background-size: contain;
+            //     position: absolute;
+            //     top: 0%;
+            //     left: 0%;
+            //     right: 0%;
+            //     bottom: 0%;
+            //     opacity: 0.1;
+            // }
         }
         .main_wrap {
+            // background-color: rgba(255,255,255,0.5);
+            // background-size: contain;
+            background: none;
+            background-color: rgba(255,255,255,0.8);
+
             .explain_wrap {
                 width: 100%;
                 position: relative;
                 top: auto;
                 right: auto;
-                padding: 0;
+                padding: 0 15px;
                 // visibility: visible;
 
                 // > div * {

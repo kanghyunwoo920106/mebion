@@ -753,6 +753,58 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus, select:focus
   font-size: 1.2em;
 }
 
+.section6 .mVisual_wrap {
+  background: url("../../img/dashboard/section_bg3.png") no-repeat;
+  background-size: cover;
+}
+
+.section6 .main_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  height: 100%;
+}
+
+.section6 .main_wrap h1.title {
+  font-size: 10em;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  color: #2f3135;
+}
+
+.section6 .main_wrap p.sub_text {
+  font-size: 1.5em;
+  font-weight: 200;
+  color: #2f3135;
+  text-align: left;
+  width: 550px;
+  word-break: keep-all;
+}
+
+.section6 .main_wrap .mouse_scroll {
+  position: absolute;
+  -webkit-animation: move_top_btn2 1s linear infinite alternate;
+          animation: move_top_btn2 1s linear infinite alternate;
+  text-align: left;
+}
+
+.section6 .main_wrap .mouse_scroll p {
+  color: #2f3135;
+  margin: 15px 0;
+  font-size: 1.2em;
+}
+
 .section2 .mVisual_wrap {
   background: url("../../img/dashboard/section_bg2.png") no-repeat;
   background-position: center center;
@@ -850,13 +902,17 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus, select:focus
 }
 
 .section3 .mVisual_wrap {
-  background: url("../../img/dashboard/section3_bg1.png") no-repeat, url("../../img/dashboard/section_visual2.png") no-repeat;
-  background-size: 50% 100%, 26% 70%;
-  background-position: left, right bottom;
+  background: url("../../img/dashboard/section3_bg1.png") no-repeat;
+  background-size: 50% 100%;
+  background-position: left;
   background-color: #fbfcfe;
+  background-repeat: no-repeat;
 }
 
 .section3 .main_wrap {
+  background: url("../../img/dashboard/section_visual2.png") no-repeat;
+  background-size: 26% 70%;
+  background-position: 100% bottom;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1262,6 +1318,25 @@ footer .container .address_wrap {
     margin: 15px 0;
     font-size: 1.2em;
   }
+  .section6 .main_wrap h1.title {
+    font-size: 15vw;
+  }
+  .section6 .main_wrap p.sub_text {
+    font-size: 4vw;
+    width: auto;
+    word-break: keep-all;
+  }
+  .section6 .main_wrap .mouse_scroll {
+    position: absolute;
+    -webkit-animation: move_top_btn3 1s linear infinite alternate;
+            animation: move_top_btn3 1s linear infinite alternate;
+    text-align: center;
+  }
+  .section6 .main_wrap .mouse_scroll p {
+    color: #2f3135;
+    margin: 15px 0;
+    font-size: 1.2em;
+  }
   .section2 .mVisual_wrap {
     background: none;
   }
@@ -1303,27 +1378,32 @@ footer .container .address_wrap {
   .section2 .main_wrap .nav_wrap .list p {
     font-size: 3vw;
   }
-  .section3 .mVisual_wrap {
-    background: none;
+  .section3 .slick-slide {
+    border: none;
   }
-  .section3 .mVisual_wrap::before {
-    content: '';
-    background: url("../../img/dashboard/section_visual2.png") no-repeat;
-    background-position: center center;
+  .section3 .slick-current {
+    border: none;
+  }
+  .section3 .slick-active {
+    border: none;
+  }
+  .section3 .mVisual_wrap {
     background-size: contain;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
-    opacity: 0.1;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url("../../img/dashboard/section3_bg1.png");
+    background-repeat: no-repeat;
+  }
+  .section3 .main_wrap {
+    background: none;
+    background-color: rgba(255, 255, 255, 0.8);
   }
   .section3 .main_wrap .explain_wrap {
     width: 100%;
     position: relative;
     top: auto;
     right: auto;
-    padding: 0;
+    padding: 0 15px;
   }
   .section3 .main_wrap .explain_wrap .title_wrap {
     width: auto;

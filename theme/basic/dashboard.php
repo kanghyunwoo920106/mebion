@@ -28,6 +28,18 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             </div>
         </div>
     </section>
+    <section class="section section6">
+        <div class="mVisual_wrap">
+            <div class="main_wrap container">
+                <h1 class="title" data-aos="fade-right" data-aos-delay="100">MEBION</h1>
+                <p class="sub_text" data-aos="fade-left" data-aos-delay="200">MEDICAL BIO ONE STOP SERVICE PLATFORM은 BLOCKCHAIN 블록체인 기술 기반으로 의료 수요자(개인 소비자 및 단체)와 의료 공급자(국/내외 의료 인프라)를 연결하는 프리미엄 의료솔루션 사업이다.</p>
+                <div class="mouse_scroll" data-aos="fade-right" data-aos-delay="300">
+                    <img src="<?=G5_THEME_URL?>/img/dashboard/mouse3.png"></img>
+                    <p>SCROLL DOWN</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section section2">
         <div class="mVisual_wrap">
             <div class="box1"></div>
@@ -64,7 +76,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     </section>
     <section class="section section3">
         <div class="mVisual_wrap">
-            <div class="main_wrap container">
+            <div class="main_wrap">
                 <div class="explain_wrap">
                     <div class="slider">
                         <div class="section3_slick_wrap">
@@ -302,7 +314,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 keyboardScrolling: true,
                 navigation: true,
                 // fitToSection: true,
-                anchors: ['firstPage','secondPage','thirdPage','fourPage','fivePage'],
+                anchors: ['firstPage','secondPage','thirdPage','fourPage','fivePage','sixPage'],
                 navigationPosition: 'left',
                 css3: true,
 
@@ -354,7 +366,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         $('#logo img').attr('src','<?php echo G5_THEME_URL?>/img/dashboard/logo_white.png')
                     }
 
-                    if(destination == 5 || destination == 6) {
+                    if(destination == 6 || destination == 7) {
                         $('.page_move_btn').css('transform','rotate(180deg)');
                     } else {
                         $('.page_move_btn').css('transform','rotate(0deg)');
@@ -482,8 +494,6 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                                 $('.nav_wrap li:nth-child(3)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon3.png');
                                 $('.nav_wrap li:nth-child(4)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon4.png');
                             }
- 
-
 
                             if($target_num == 2) {
                                 $('li.active').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon2_hover.png');
@@ -545,7 +555,11 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         }
 
                         if(index == 5) {
-                            $.fn.fullpage.moveTo('fourPage')
+                            $.fn.fullpage.moveTo('sixPage')
+                        }
+
+                        if(index == 6) {
+                            $.fn.fullpage.moveTo('fivePage')
                         }
                     });
                 }
@@ -804,14 +818,28 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             $slider.on('beforeChange', function(event, slick, currentSlide, nextSlide) {   
                 var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
                 
-                $progressBar
-                .css('background-size', calc + '% 100%')
-                .attr('aria-valuenow', calc );
-                
+                $progressBar.css('background-size', calc + '% 100%').attr('aria-valuenow', calc );
+                console.log(calc)
                 $progressBarLabel.text( calc + '% completed' );
+                
+                if(nextSlide == 0) {
+                    $('.section3 .mVisual_wrap').css('background-image','url("<?=G5_THEME_URL?>/img/dashboard/section3_bg1.png")')
+                }
+
+                if(nextSlide == 1) {
+                    $('.section3 .mVisual_wrap').css('background-image','url("<?=G5_THEME_URL?>/img/dashboard/section3_bg2.png")')
+                }
+
+                if(nextSlide == 2) {
+                    $('.section3 .mVisual_wrap').css('background-image','url("<?=G5_THEME_URL?>/img/dashboard/section3_bg3.png")')
+                }
+
+                
             });
 
             $('.explain_wrap .slider').not('.slick-initialized').slick(slickOption);
+
+
         }
     })
 </script>
