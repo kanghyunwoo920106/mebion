@@ -537,7 +537,7 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus, select:focus
 }
 
 #logo a img {
-  width: 100% !important;
+  width: 187px !important;
   height: 40px !important;
 }
 
@@ -1666,6 +1666,9 @@ footer .container .address_wrap {
   #hd_pop, #hd_wrapper, #tnb .inner, #gnb .gnb_wrap, #container_wr,
   #ft_wr {
     width: auto;
+  }
+  #logo a img {
+    width: 120px;
   }
 }
 

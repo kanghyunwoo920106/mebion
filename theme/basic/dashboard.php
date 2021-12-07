@@ -3,18 +3,6 @@ if (!defined('_INDEX_')) define('_INDEX_', true);
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 ?>
 
-<script src='//unpkg.com/popper.js@1/dist/umd/popper.min.js'></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css" integrity="sha512-/AilQf/shuEGfh8c3DoIqcIqHZCKpiImSyt+fxIKJphHiNa6QMPb6AbDly6rkjmGr/5OZd35JtvVkbEKnCZO+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js" integrity="sha512-bxzECOBohzcTcWocMAlNDE2kYs0QgwGs4eD8TlAN2vfovq13kfDfp95sJSZrNpt0VMkpP93ZxLC/+WN/7Trw2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.5.4/vegas.min.css" rel="stylesheet">
-<link href="<?=G5_THEME_URL?>/css/scss/main.css" rel="stylesheet">			
-<!-- <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5cc3142d4eefd7a6c2a8856462db2dcc"></script> -->
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
 <div id="fullpage">
     <section class="section section1">
         <div class="mVisual_wrap">
@@ -359,7 +347,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         $('.nav_list_wrap').css('display','flex');
                     }
 
-                    if(destination == 2 || destination == 3|| destination == 4) {
+                    if(destination == 2 || destination == 3|| destination == 4 || destination == 5) {
                         $('#logo img').attr('src','<?php echo G5_THEME_URL?>/img/dashboard/logo_black.png')
                     }
                     else {
@@ -423,7 +411,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         }
 
                         if(!$('.nav_bar_wrap').hasClass('on')) {
-                            if(index == 1 || index == 5) {
+                            if(index == 1 || index == 6) {
                                 $('#logo img').attr('src','<?=G5_THEME_URL?>/img/dashboard/logo_white.png');    
                             } else {
                                 $('#logo img').attr('src','<?=G5_THEME_URL?>/img/dashboard/logo_black.png');
@@ -442,7 +430,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                             }
 
                             if(!$('.nav_bar_wrap').hasClass('on')) {
-                                if(index == 1 || index == 5) {
+                                if(index == 1 || index == 6) {
                                     $('#logo img').attr('src','<?=G5_THEME_URL?>/img/dashboard/logo_white.png');    
                                 } else {
                                     $('#logo img').attr('src','<?=G5_THEME_URL?>/img/dashboard/logo_black.png');
@@ -806,8 +794,11 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 autoplay: true,
                 infinite: true,
                 speed: 1000,
+                autoplaySpeed : 1000,
+                pauseOnHover: false,
                 slideToShow:1,
                 draggable: true,
+                accessibility: false,
                 arrows: false
             }
 
@@ -819,11 +810,10 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 var calc = ( (nextSlide) / (slick.slideCount-1) ) * 100;
                 
                 $progressBar.css('background-size', calc + '% 100%').attr('aria-valuenow', calc );
-                console.log(calc)
                 $progressBarLabel.text( calc + '% completed' );
                 
                 if(nextSlide == 0) {
-                    $('.section3 .mVisual_wrap').css('background-image','url("<?=G5_THEME_URL?>/img/dashboard/section3_bg1.png")')
+                    $('.section3 .mVisual_wrap').css('background-image','url("<?=G5_THEME_URL?>/img/dashboard/section3_bg1.png")');
                 }
 
                 if(nextSlide == 1) {
@@ -833,13 +823,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 if(nextSlide == 2) {
                     $('.section3 .mVisual_wrap').css('background-image','url("<?=G5_THEME_URL?>/img/dashboard/section3_bg3.png")')
                 }
-
-                
             });
 
             $('.explain_wrap .slider').not('.slick-initialized').slick(slickOption);
-
-
         }
     })
 </script>

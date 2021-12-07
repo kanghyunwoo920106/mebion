@@ -82,7 +82,7 @@ border:1px solid #558ab7 !important;
 #hd_wrapper:after {display:block;visibility:hidden;clear:both;content:""}
 
 #logo {}
-#logo a img{width: 100% !important;height: 40px !important;}
+#logo a img{width: 187px !important;height: 40px !important;}
 
 .hd_sch_wr {float:left;padding:30px 0;;width:445px;margin-left:65px}
 #hd_sch h3 {position:absolute;font-size:0;line-height:0;overflow:hidden}
@@ -1115,6 +1115,7 @@ footer {
 
     #hd_pop,#hd_wrapper,#tnb .inner,#gnb .gnb_wrap,#container_wr,
     #ft_wr {width:auto}
+    #logo a img {width: 120px;}
 }
 
 @include desktop-wide-wide {
