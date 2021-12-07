@@ -398,7 +398,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                             }
 
                             if(!$('.nav_bar_wrap').hasClass('on')) {
-                                if(index == 1 || index == 5) {
+                                if(index == 1 || index == 6) {
                                     $('#logo img').attr('src','<?=G5_THEME_URL?>/img/dashboard/logo_white.png');    
                                 } else {
                                     $('#logo img').attr('src','<?=G5_THEME_URL?>/img/dashboard/logo_black.png');
