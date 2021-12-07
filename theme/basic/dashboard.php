@@ -794,7 +794,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 autoplay: true,
                 infinite: true,
                 speed: 1000,
-                autoplaySpeed : 1000,
+                autoplaySpeed : 10000,
                 pauseOnHover: false,
                 slideToShow:1,
                 draggable: true,
@@ -823,10 +823,17 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 if(nextSlide == 2) {
                     $('.section3 .mVisual_wrap').css('background-image','url("<?=G5_THEME_URL?>/img/dashboard/section3_bg3.png")').css('transition','all .5s');
                 }
+
+                if($('.slick-active'))
+
             });
 
             $('.explain_wrap .slider').not('.slick-initialized').slick(slickOption);
+
+            $('.section3_slick_wrap')
         }
+
+        
     })
 </script>
 
