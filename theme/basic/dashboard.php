@@ -29,6 +29,10 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         </div>
     </section>
     <section class="section section2">
+        <div class="mv mv1 active" data-index="1"></div>
+        <div class="mv mv2" data-index="2"></div>
+        <div class="mv mv3" data-index="3"></div>
+        <div class="mv mv4" data-index="4"></div>
         <div class="mVisual_wrap">
             <div class="box1"></div>
             <div class="box2"></div>
@@ -42,19 +46,19 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                     <p class="sub_text" data-aos="fade-right" data-aos-delay="400">차병원그룹 바이오케어와 건강검진 플랫폼 사업 진행중<br>(B2B OR B2C)</p>
                 </div>
                 <ul class="nav_wrap" data-aos="fade-right" data-aos-delay="500">
-                    <li class="list active">
+                    <li class="list active" data-index="1">
                         <img src="<?=G5_THEME_URL?>/img/dashboard/section2_icon1_hover.png" alt="" data-num="1">
                         <p class="point_color font_shadow">건강검진<br>플랫폼</p>
                     </li>
-                    <li class="list">
+                    <li class="list" data-index="2">
                         <img src="<?=G5_THEME_URL?>/img/dashboard/section2_icon2.png" alt="" data-num="2">
                         <p class="">네트워크<br>플랫폼</p>
                     </li>
-                    <li class="list">
+                    <li class="list" data-index="3">
                         <img src="<?=G5_THEME_URL?>/img/dashboard/section2_icon3.png" alt="" data-num="3">
                         <p class="">블록체인<br>결제플랫폼</p>
                     </li>
-                    <li class="list">
+                    <li class="list" data-index="4">
                         <img src="<?=G5_THEME_URL?>/img/dashboard/section2_icon4.png" alt="" data-num="4">
                         <p class="">헬스케어<br>비즈니스</p>
                     </li>
@@ -63,71 +67,81 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         </div>
     </section>
     <section class="section section3">
+        <img class="section_bg section3_bg1 active" src="<?=G5_THEME_URL?>/img/dashboard/section3_bg1.png" alt="">
+        <img class="section_bg section3_bg2" src="<?=G5_THEME_URL?>/img/dashboard/section3_bg2.png" alt="">
+        <img class="section_bg section3_bg3" src="<?=G5_THEME_URL?>/img/dashboard/section3_bg3.png" alt="">
+        <img class="section_bg_mobile section3_bg1_mobile active" src="<?=G5_THEME_URL?>/img/dashboard/section3_edit1.jpg" alt="">
+        <img class="section_bg_mobile section3_bg2_mobile" src="<?=G5_THEME_URL?>/img/dashboard/section3_edit2.jpg" alt="">
+        <img class="section_bg_mobile section3_bg3_mobile" src="<?=G5_THEME_URL?>/img/dashboard/section3_edit3.jpg" alt="">
         <div class="mVisual_wrap">
             <div class="main_wrap">
                 <div class="explain_wrap">
-                    <div class="slider">
-                        <div class="section3_slick_wrap">
-                            <div class="title_wrap">
-                                <h1 class="title" data-aos="fade-right" data-aos-delay="100"><span class="point_color">BUSINESS</span></h1>
-                                <h1 class="title font-weight-bold" data-aos="fade-right" data-aos-delay="200">PREMIUM MEMBERSHIP <br>SERVICE</h1>
-                            </div>   
-                            <div class="sub_text_wrap">
-                                <h2 class="title" data-aos="fade-right" data-aos-delay="300">프리미엄 멤버쉽 서비스</h2>
-                                <p data-aos="fade-right" data-aos-delay="400">
-                                    병원 및 검진센터 조회/예약/결제/후기 서비스 <br>
-                                    개인 진료/검진 결과 기록 보관 및 병원/검진센터 간 공유 SYSTEM <br>
-                                    유전자 및 가계도 분석을 통한 개인 맞춤형 병원/검진센터 및 보험 추천 <br>
-                                    화상을 통한 UNCONTACT 원격진료 서비스 플랫폼
-                                </p>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="title_wrap">
+                                    <h1 class="title" data-aos="fade-right" data-aos-delay="100"><span class="point_color">BUSINESS</span></h1>
+                                    <h1 class="title font-weight-bold" data-aos="fade-right" data-aos-delay="200">Premium membership <br>service</h1>
+                                </div>   
+                                <div class="sub_text_wrap">
+                                    <h2 class="title" data-aos="fade-right" data-aos-delay="300">프리미엄 멤버쉽 서비스</h2>
+                                    <p data-aos="fade-right" data-aos-delay="400">
+                                        병원 및 검진센터 조회/예약/결제/후기 서비스 <br>
+                                        개인 진료/검진 결과 기록 보관 및 병원/검진센터 간 공유 SYSTEM <br>
+                                        유전자 및 가계도 분석을 통한 개인 맞춤형 병원/검진센터 및 보험 추천 <br>
+                                        화상을 통한 UNCONTACT 원격진료 서비스 플랫폼
+                                    </p>
+                                </div>
+                                <div class="pagination_wrap">
+                                    <p data-aos="fade-right" data-aos-delay="500"><span>01</span> /03</p>
+                                </div>
                             </div>
-                            <div class="pagination_wrap">
-                                <p data-aos="fade-right" data-aos-delay="500"><span>01</span> /03</p>
+                            <div class="swiper-slide">
+                                <div class="title_wrap">
+                                    <h1 class="title" data-aos="fade-right" data-aos-delay="100"><span class="point_color">BUSINESS</span></h1>
+                                    <h1 class="title font-weight-bold" data-aos="fade-right" data-aos-delay="200">Blockchain technology <br>Mebion coin</h1>
+                                </div>   
+                                <div class="sub_text_wrap">
+                                    <h2 class="title" data-aos="fade-right" data-aos-delay="300">블록체인 기술 적용</h2>
+                                    <p data-aos="fade-right" data-aos-delay="400">
+                                        블록체인 기술을 적용한 개인 진료/검진 결과 암호화 및 data 보안 <br>
+                                        진료/검진 결과  DATA 축적 및 학습(Machin Running) <br>
+                                        신체 지수 모니터링 결과에 대한 건강 상태 진단(A.I) <br>
+                                        결제 서비스 지원을 위한 페이/자산관리 플랫폼 제공
+                                    </p>
+                                </div>
+                                <div class="pagination_wrap">
+                                    <p data-aos="fade-right" data-aos-delay="500"><span>02</span> /03</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="section3_slick_wrap">
-                            <div class="title_wrap">
-                                <h1 class="title" data-aos="fade-right" data-aos-delay="100"><span class="point_color">BUSINESS</span></h1>
-                                <h1 class="title font-weight-bold" data-aos="fade-right" data-aos-delay="200">PREMIUM MEMBERSHIP <br>SERVICE</h1>
-                            </div>   
-                            <div class="sub_text_wrap">
-                                <h2 class="title" data-aos="fade-right" data-aos-delay="300">프리미엄 멤버쉽 서비스</h2>
-                                <p data-aos="fade-right" data-aos-delay="400">
-                                    병원 및 검진센터 조회/예약/결제/후기 서비스 <br>
-                                    개인 진료/검진 결과 기록 보관 및 병원/검진센터 간 공유 SYSTEM <br>
-                                    유전자 및 가계도 분석을 통한 개인 맞춤형 병원/검진센터 및 보험 추천 <br>
-                                    화상을 통한 UNCONTACT 원격진료 서비스 플랫폼
-                                </p>
-                            </div>
-                            <div class="pagination_wrap">
-                                <p data-aos="fade-right" data-aos-delay="500"><span>02</span> /03</p>
-                            </div>
-                        </div>
-                        <div class="section3_slick_wrap">
-                            <div class="title_wrap">
-                                <h1 class="title" data-aos="fade-right" data-aos-delay="100"><span class="point_color">BUSINESS</span></h1>
-                                <h1 class="title font-weight-bold" data-aos="fade-right" data-aos-delay="200">PREMIUM MEMBERSHIP <br>SERVICE</h1>
-                            </div>   
-                            <div class="sub_text_wrap">
-                                <h2 class="title" data-aos="fade-right" data-aos-delay="300">프리미엄 멤버쉽 서비스</h2>
-                                <p data-aos="fade-right" data-aos-delay="400">
-                                    병원 및 검진센터 조회/예약/결제/후기 서비스 <br>
-                                    개인 진료/검진 결과 기록 보관 및 병원/검진센터 간 공유 SYSTEM <br>
-                                    유전자 및 가계도 분석을 통한 개인 맞춤형 병원/검진센터 및 보험 추천 <br>
-                                    화상을 통한 UNCONTACT 원격진료 서비스 플랫폼
-                                </p>
-                            </div>
-                            <div class="pagination_wrap">
-                                <p data-aos="fade-right" data-aos-delay="500"><span>03</span> /03</p>
+                            <div class="swiper-slide">
+                                <div class="title_wrap">
+                                    <h1 class="title" data-aos="fade-right" data-aos-delay="100"><span class="point_color">BUSINESS</span></h1>
+                                    <h1 class="title font-weight-bold" data-aos="fade-right" data-aos-delay="200">Smart healthcare <br>service</h1>
+                                </div>   
+                                <div class="sub_text_wrap">
+                                    <h2 class="title" data-aos="fade-right" data-aos-delay="300">스마트 헬스 케어 서비스</h2>
+                                    <p data-aos="fade-right" data-aos-delay="400">
+                                        전용/범용 웨어러블 장치를 통한 실시간 신체 지수 측정 <br>
+                                        신체 지수 모니터링을 통한 위급 상황 감지, 경고 및 신고(신체 지수 : 심박수, 혈압, 스트레스, 심전도, 낙상, 혈당 등) <br>
+                                        전용 어플을 통한 식단/운동 관리 및 헬스 스케쥴러 <br>
+                                    </p>
+                                </div>
+                                <div class="pagination_wrap">
+                                    <p data-aos="fade-right" data-aos-delay="500"><span>03</span> /03</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-            <span class="slider__label sr-only">
+        <div class="swiper-progress-bar">
+            <span class="slide_progress-bar"></span>
         </div>
+        <!-- <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+            <span class="slider__label sr-only">
+        </div> -->
     </section>
     <section class="section section4">
         <div class="mVisual_wrap">
@@ -283,7 +297,8 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             footer_hide_init();
             fullpage_init();
             map_init();
-            progressbar_init();
+            // progressbar_init();
+            swiper_init();
         }
 
         // 푸터 숨김 초기화 함수
@@ -301,40 +316,10 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 scrollBar: false,
                 keyboardScrolling: true,
                 navigation: true,
-                // fitToSection: true,
                 anchors: ['firstPage','secondPage','thirdPage','fourPage','fivePage','sixPage'],
                 navigationPosition: 'left',
                 css3: true,
-
-                // afterResponsive: function(inResponsive) {
-                //     console.log("responsive:" + inResponsive)
-                // },
-
-                // afterResize: function() {
-                //     // $.fn.fullpage.reBuild();
-                //     // console.log('rebuild finish.');
-                //     $.fn.fullpage.setResponsive(true)
-                //     console.log("responsive: ");
-                //     // $.fn.fullpage.setAllowScrolling(true);
-                // },
-                // afterResponsive: function(isResponsive) {
-                //     console.log(isResponsive)
-                //     console.log('rebuild')
-                // },
-
-                // afterResize: function() {
-                //     console.log('afterResize');
-                //     // $.fn.fullpage.reBuild();
-                //     $.fn.fullpage.setResponsive(true);
-                // },
-
-                // afterReBuild: function() {
-                //     console.log('ddd');
-                // },
-
-                // afterResponsive: function(isResponsive){
-                //     alert("Is responsive: " + isResponsive);
-                // },
+                
                 // 페이지 떠날 시 이벤트
                 onLeave: function(origin, destination, direction) {
                     $('.section [data-aos]').each(function(){
@@ -367,9 +352,16 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         $(this).addClass("aos-animate")
                     });
 
+                    $('.modal-header button').on('click',function(e) {
+                        console.log(e)
+
+                    });
+
                     $('.open_menu').off().on('click',function(e) {
                         e.preventDefault();
                         e.stopPropagation();
+
+                        console.log(e)
 
                         if($('.nav_bar_wrap').css('left') != '0px') {
                             $('.menu_back_drop').addClass('show');
@@ -447,66 +439,56 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         });
                     });
 
-                    if(index != 2) {
-                        $('.section2 .nav_wrap li:nth-child(1)').addClass('active');
-                        $('.section2 .nav_wrap li:nth-child(2)').removeClass('active');
-                        $('.section2 .nav_wrap li:nth-child(3)').removeClass('active');
-                        $('.section2 .nav_wrap li:nth-child(4)').removeClass('active');
-
-                        $('.section2 .nav_wrap li:nth-child(1)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon1_hover.png');
-                        $('.section2 .nav_wrap li:nth-child(2)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon2.png');
-                        $('.section2 .nav_wrap li:nth-child(3)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon3.png');
-                        $('.section2 .nav_wrap li:nth-child(4)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon4.png');
-                        
-                        $('.section2 .nav_wrap li:nth-child(1)').find('p').addClass('point_color').addClass('font_shadow');
-                        $('.section2 .nav_wrap li:nth-child(2)').find('p').removeClass('point_color').removeClass('font_shadow');
-                        $('.section2 .nav_wrap li:nth-child(3)').find('p').removeClass('point_color').removeClass('font_shadow');
-                        $('.section2 .nav_wrap li:nth-child(4)').find('p').removeClass('point_color').removeClass('font_shadow');
-                    }
-
-                    if(index == 2) {
+                    if(index == 3) {
                         $('.section2 .nav_wrap li').on('click', function() {
-                            $(this).addClass('active');
-                            $(this).siblings().removeClass('active');
+                            
+                            var data_index = $(this).attr('data-index');
 
-                            var $target_num = $('li.active').find('img').attr('data-num');
-                            var $target_img = $('li.active').find('img');
-                            var $target_text = $('li.active').find('p');
+                            $('.section2 .mv').each(function(index, value) {
+                                if($(this).attr('data-index') == data_index) {
+                                    $(this).addClass('active');
+                                    $(this).siblings().removeClass('active');
+                                }
+                            })
 
-                            $('li.active').find('p').addClass('point_color').addClass('font_shadow');
-                            $('li.active').siblings().removeClass('active').find('p').removeClass('point_color').removeClass('font_shadow');
+                            $(this).find('p').addClass('point_color');
+                            $(this).siblings().find('p').removeClass('point_color')
 
-                            if($target_num == 1) {
-                                $('li.active').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon1_hover.png');
-                                $('.nav_wrap li:nth-child(2)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon2.png');
-                                $('.nav_wrap li:nth-child(3)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon3.png');
-                                $('.nav_wrap li:nth-child(4)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon4.png');
+                            if($(this).attr('data-index') == 1) {
+                                $(this).find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon1_hover.png')
+                                $(this).siblings('li[data-index="2"]').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon2.png')
+                                $(this).siblings('li[data-index="3"]').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon3.png')
+                                $(this).siblings('li[data-index="4"]').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon4.png')
+                                $(this).parents('.section2').find('div.sub_text_wrap').html('<p class="sub_text aos-init aos-animate" data-aos="fade-right" data-aos-delay="400">차병원그룹 바이오케어와 건강검진 플랫폼 사업 진행중 <br>(B2B or B2C)</p>')
                             }
 
-                            if($target_num == 2) {
-                                $('li.active').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon2_hover.png');
-                                $('.nav_wrap li:nth-child(1)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon1.png');
-                                $('.nav_wrap li:nth-child(3)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon3.png');
-                                $('.nav_wrap li:nth-child(4)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon4.png');
+                            if($(this).attr('data-index') == 2) {
+                                $(this).find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon2_hover.png')
+                                $(this).siblings('li[data-index="1"]').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon1.png')
+                                $(this).siblings('li[data-index="3"]').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon3.png')
+                                $(this).siblings('li[data-index="4"]').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon4.png')
+                                $(this).parents('.section2').find('div.sub_text_wrap').html('<p class="sub_text aos-init aos-animate" data-aos="fade-right" data-aos-delay="400">국내 대형, 대학병원 및 프리미엄 건강검진센터를 포함 <br> 250여개 네트워크 플랫폼 구축 완료</p>')
                             }
 
-                            if($target_num == 3) {
-                                $('li.active').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon3_hover.png');
-                                $('.nav_wrap li:nth-child(1)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon1.png');
-                                $('.nav_wrap li:nth-child(2)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon2.png');
-                                $('.nav_wrap li:nth-child(4)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon4.png');
+                            if($(this).attr('data-index') == 3) {
+                                $(this).find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon3_hover.png')
+                                $(this).siblings('li[data-index="1"]').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon1.png')
+                                $(this).siblings('li[data-index="2"]').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon2.png')
+                                $(this).siblings('li[data-index="4"]').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon4.png')
+                                $(this).parents('.section2').find('div.sub_text_wrap').html('<p class="sub_text aos-init aos-animate" data-aos="fade-right" data-aos-delay="400">블록체인 결제 플랫폼 베타서비스 오픈<br>(차병원, 고려대병원, 서울대병원, 삼성병원, 세브란스 등 검진프로그램 제공중)</p>')
                             }
 
-                            if($target_num == 4) {
-                                $('li.active').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon4_hover.png');
-                                $('.nav_wrap li:nth-child(1)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon1.png');
-                                $('.nav_wrap li:nth-child(2)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon2.png');
-                                $('.nav_wrap li:nth-child(3)').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon3.png');
+                            if($(this).attr('data-index') == 4) {
+                                $(this).find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon4_hover.png')
+                                $(this).siblings('li[data-index="1"]').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon1.png')
+                                $(this).siblings('li[data-index="2"]').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon2.png')
+                                $(this).siblings('li[data-index="3"]').find('img').attr('src','<?=G5_THEME_URL?>/img/dashboard/section2_icon3.png')
+                                $(this).parents('.section2').find('div.sub_text_wrap').html('<p class="sub_text aos-init aos-animate" data-aos="fade-right" data-aos-delay="400">성형, 미용, 치과 및 IOT, 헬스케어 비지니스 추진중</p>')
                             }
                         });
                     }
 
-                    if(index == 4) {
+                    if(index == 5) {
                         $('.modal .close').on('click',function() {
                             $.fn.fullpage.setAllowScrolling(true);
                         });
@@ -785,6 +767,81 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             }
         }
 
+        // swiper 초기화 함수
+        function swiper_init() {
+            var swiper = new Swiper(".swiper-container", {
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false
+                },
+                speed: 1000,
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "fraction"
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                },
+                on: {
+                    init: function () {
+                        $(".swiper-progress-bar").removeClass("animate");
+                        $(".swiper-progress-bar").removeClass("active");
+                        $(".swiper-progress-bar").eq(0).addClass("animate");
+                        $(".swiper-progress-bar").eq(0).addClass("active");
+                    },
+                    slideChangeTransitionStart: function () {
+                        $(".swiper-progress-bar").removeClass("animate");
+                        $(".swiper-progress-bar").removeClass("active");
+                        $(".swiper-progress-bar").eq(0).addClass("active");
+
+                        var selected_index = $('.swiper-slide-active').attr('data-swiper-slide-index');
+
+                        switch (selected_index) {
+                            case '0':
+                                $('.section3_bg1').addClass('active')
+                                $('.section3_bg2').removeClass('active')
+                                $('.section3_bg3').removeClass('active')
+                                $('.section3_bg1_mobile').addClass('active')
+                                $('.section3_bg2_mobile').removeClass('active')
+                                $('.section3_bg3_mobile').removeClass('active')
+                                break;
+
+                            case '1':
+                                $('.section3_bg1').removeClass('active')
+                                $('.section3_bg2').addClass('active')
+                                $('.section3_bg3').removeClass('active')
+                                $('.section3_bg1_mobile').removeClass('active')
+                                $('.section3_bg2_mobile').addClass('active')
+                                $('.section3_bg3_mobile').removeClass('active')
+                                break;
+
+                            case '2':
+                                $('.section3_bg1').removeClass('active')
+                                $('.section3_bg2').removeClass('active')
+                                $('.section3_bg3').addClass('active')
+                                $('.section3_bg1_mobile').removeClass('active')
+                                $('.section3_bg2_mobile').removeClass('active')
+                                $('.section3_bg3_mobile').addClass('active')
+                                break;
+                        }
+                    },
+                    slideChangeTransitionEnd: function () {
+                        $(".swiper-progress-bar").eq(0).addClass("animate");
+                    }
+                }
+                
+            });
+            $('.swiper-container').hover(function() {
+                swiper.autoplay.stop();
+                $('.swiper-progress-bar').removeClass('animate');
+            }, function(){
+                swiper.autoplay.start();
+                $('.swiper-progress-bar').addClass('animate');
+            });
+        }
+
         // 슬라이드 진행 바 초기화 함수
         function progressbar_init() {
             
@@ -827,11 +884,11 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             });
 
             $('.explain_wrap .slider').not('.slick-initialized').slick(slickOption);
+            
         }
-
-        
     })
 </script>
 
 
-            
+
+

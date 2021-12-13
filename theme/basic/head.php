@@ -50,9 +50,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
             </button>
 
             <ul class="nav_list_wrap">
-                <li><a href="<?php echo G5_URL ?>">Company</a></li>
-                <li><a href="<?php echo G5_URL ?>">Business</a></li>
-                <li><a href="<?php echo G5_URL ?>">Contact</a></li>
+                <li><a href="page.php?id=dashboard#thirdPage">Company</a></li>
+                <li><a href="page.php?id=dashboard#fourPage">Business</a></li>
+                <li><a href="page.php?id=dashboard#sixPage">Contact</a></li>
             </ul>
             <!-- <div class="collapse navbar-collapse" id="navbar">
                 <div class="navbar-nav">
@@ -167,9 +167,9 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 </div>
 <div class="nav_bar_wrap">
     <div class="nav_bar">
-        <p><a href="<?php echo G5_URL ?>">Company</a></p>
-        <p><a href="<?php echo G5_URL ?>">Business</a></p>
-        <p><a href="<?php echo G5_URL ?>">Contact</a></p>
+        <p><a href="page.php?id=dashboard#thirdPage">Company</a></p>
+        <p><a href="page.php?id=dashboard#fourPage">Business</a></p>
+        <p><a href="page.php?id=dashboard#sixPage">Contact</a></p>
     </div>
 </div>
 <div class="menu_back_drop fade"></div>

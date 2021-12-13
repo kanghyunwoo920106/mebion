@@ -365,7 +365,7 @@
                     $('.open_menu').off().on('click',function(e) {
                         e.preventDefault();
                         e.stopPropagation();
-
+                        alert('d');
                         if($('.nav_bar_wrap').css('left') != '0px') {
                             $('.menu_back_drop').addClass('show');
                             $('.nav_bar_wrap').addClass('on');

@@ -50,10 +50,10 @@ header('Access-Control-Allow-Headers','*');
 <meta name="subject" content="mebion" />
 <meta name="keywords" content="mebion" />
 <meta name="description" content="mebion" />
-<link rel="image_src" href="<?=G5_THEME_URL?>/img/default.png" />
+<link rel="image_src" href="<?=G5_THEME_URL?>/img/default_2.png" />
 
 <!--대표 이미지 URL (이미지를 여러 개 지정할 수 있음) //-->
-<meta name="apple-mobile-web-app-title" content="<?=G5_THEME_URL?>/img/default.png" />
+<meta name="apple-mobile-web-app-title" content="<?=G5_THEME_URL?>/img/default_2.png" />
 <meta name="format-detection" content="telephone=no" />
 
 <?php
@@ -83,12 +83,14 @@ if($config['cf_add_meta'])
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"/>
 <link href="<?=G5_THEME_URL?>/css/scss/default.css" rel="stylesheet">			
 <link href="<?=G5_THEME_URL?>/css/scss/main.css" rel="stylesheet">			
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js" integrity="sha512-bxzECOBohzcTcWocMAlNDE2kYs0QgwGs4eD8TlAN2vfovq13kfDfp95sJSZrNpt0VMkpP93ZxLC/+WN/7Trw2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 
 <!--[if lte IE 8]>
 <script src="<?php echo G5_JS_URL ?>/html5.js"></script>
