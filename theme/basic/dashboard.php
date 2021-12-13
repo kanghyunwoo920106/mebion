@@ -361,8 +361,6 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         e.preventDefault();
                         e.stopPropagation();
 
-                        console.log(e)
-
                         if($('.nav_bar_wrap').css('left') != '0px') {
                             $('.menu_back_drop').addClass('show');
                             $('.nav_bar_wrap').addClass('on');
